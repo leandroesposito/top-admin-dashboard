@@ -107,6 +107,35 @@ body {
     width: 2.5rem;
     height: 2.5rem;
 }
+
+.lower-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.user-info {
+    display: grid;
+    grid-template-columns: 5rem 1fr;
+    align-items: center;
+}
+
+.user-info .profile-picture {
+    width: 4rem;
+    height: 4rem;
+}
+
+.greetings {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.greeting {
+    font-size: .7rem;
+    align-self: start;
+}
+
 button {
     margin-left: 1rem;
     background-color: var(--theme-accent-color);
@@ -117,4 +146,8 @@ button {
     font-size: .9rem;
     width: 6rem;
     padding: .5rem 0;
+}
+
+.project-buttons {
+    justify-self: end;
 }
