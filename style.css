@@ -35,7 +35,6 @@ body {
     grid-row: 1 / 3;
     min-width: fit-content;
     padding: .5rem 1rem;
-
 }
 
 .main-content {
@@ -66,14 +65,16 @@ body {
 }
 
 .header {
-    padding: 0rem 2rem;
+    padding: 1rem 2rem;
+    display: grid;
+    align-items: stretch;
 }
 
 .upper-header {
     display: grid;
     grid-template-columns: 2fr 1fr;
     align-items: center;
-    margin: 1rem 0;
+    margin-bottom: 1rem;
 }
 
 .search-container {
@@ -111,7 +112,6 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    margin: 1rem 0;
 }
 
 .user-info {
