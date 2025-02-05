@@ -1,5 +1,5 @@
-* {
-    border: 1px solid red;
+:root {
+    --theme-accent-color: hsl(273, 79%, 46%);
 }
 
 body {
@@ -31,7 +31,7 @@ body {
 }
 
 .sidebar {
-    background-color: hsl(273, 79%, 46%);
+    background-color: var(--theme-accent-color);
     grid-area: sidebar;
     min-width: fit-content;
     padding: .5rem 1rem;
@@ -107,4 +107,15 @@ body {
 .logged-user .image {
     width: 2.5rem;
     height: 2.5rem;
+}
+button {
+    margin-left: 1rem;
+    background-color: var(--theme-accent-color);
+    color: white;
+    border: none;
+    border-radius: 2rem;
+    font: inherit;
+    font-size: .9rem;
+    width: 6rem;
+    padding: .5rem 0;
 }
