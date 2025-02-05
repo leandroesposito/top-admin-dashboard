@@ -2,5 +2,30 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    min-height: 100%;
+    min-height: 100vh;
+}
+
+.body-wrapper {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 4fr;
+    grid-template-areas:
+        "sidebar header"
+        "sidebar main-content";
+}
+
+.header {
+    background-color: azure;
+    grid-area: header;
+}
+
+.sidebar {
+    background-color: hsl(264, 100%, 75%);
+    grid-area: sidebar;
+}
+
+.main-content {
+    background-color: hsl(0, 0%, 45%);
+    grid-area: main-content;
 }
