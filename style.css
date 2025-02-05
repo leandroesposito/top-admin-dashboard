@@ -150,3 +150,17 @@ button {
 .project-buttons {
     justify-self: end;
 }
+
+.main-content {
+    display: grid;
+    grid-template-rows: 3fr 2fr;
+    grid-template-columns: 1fr 20rem;
+    justify-content: stretch;
+    align-content: stretch;
+    justify-items: stretch;
+    align-items: stretch;
+}
+
+.projects-container {
+    grid-row: 1 / 3;
+}
