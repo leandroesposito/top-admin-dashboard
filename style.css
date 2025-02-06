@@ -163,3 +163,25 @@ button {
 .projects-container {
     grid-row: 1 / 3;
 }
+
+.card {
+    background-color: white;
+    border-radius: 1rem;
+    padding: 1rem;
+    color: var(--font-light-color);
+    box-shadow: 2px 2px 5px;
+}
+
+.card .bold {
+    color: black;
+}
+
+.announcement {
+    font-size: .9rem;
+    padding: 1rem 0;
+}
+
+.announcement:not(:first-child):not(:last-child) {
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+}
