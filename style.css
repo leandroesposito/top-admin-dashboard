@@ -154,6 +154,8 @@ button {
     display: grid;
     grid-template-rows: 3fr 2fr;
     grid-template-columns: 1fr 20rem;
+    gap: 1rem;
+    padding: 1rem;
     justify-content: stretch;
     align-content: stretch;
     justify-items: stretch;
