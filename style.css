@@ -19,7 +19,7 @@ body {
     min-height: 100vh;
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr 4fr;
+    grid-template-rows: min-content 1fr;
 }
 
 .header {
@@ -149,7 +149,7 @@ button {
 
 .main-content {
     display: grid;
-    grid-auto-rows: min-content;
+    grid-template-rows: min-content 1fr;
     grid-template-columns: 1fr 20rem;
     gap: 1rem;
     padding: 1rem;
