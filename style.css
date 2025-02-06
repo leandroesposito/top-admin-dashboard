@@ -1,5 +1,6 @@
 :root {
     --theme-accent-color: hsl(273, 79%, 46%);
+    --font-light-color: rgb(60, 60, 60);
 }
 
 * {
