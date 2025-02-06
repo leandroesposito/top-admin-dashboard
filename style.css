@@ -160,6 +160,11 @@ button {
     align-content: stretch;
     justify-items: stretch;
     align-items: stretch;
+
+}
+
+.main-content .title {
+    margin-bottom: 1rem;
 }
 
 .projects-container {
