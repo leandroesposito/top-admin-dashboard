@@ -3,10 +3,6 @@
     --font-light-color: rgb(60, 60, 60);
 }
 
-* {
-    border: 1px solid red;
-}
-
 body {
     margin: 0;
     padding: 0;
