@@ -1,5 +1,6 @@
 :root {
     --theme-accent-color: hsl(273, 79%, 46%);
+    --theme-accent-color-light: hsl(273, 79%, 60%);
     --font-light-color: rgb(60, 60, 60);
 }
 
@@ -67,17 +68,24 @@ body {
 .sidebar .item {
     display: flex;
     align-items: center;
+    cursor: pointer;
+    border-radius: .5rem;
+    transition: all .5s ease-in-out;
 }
 
 .sidebar .item:not(.title) {
     padding-left: .5rem;
 }
 
+.sidebar .item:hover {
+    background-color: var(--theme-accent-color-light);
+}
+
 .icon {
     width: 2rem;
     height: 2rem;
-    /* background-color: aqua; */
     margin-right: 1rem;
+    cursor: pointer;
 }
 
 .header {
@@ -104,6 +112,15 @@ body {
     background-color: rgb(218, 218, 218);
     border: none;
     border-radius: 1rem;
+    padding: 0 1rem;
+    color: var(--font-light-color);
+    font-size: .9rem;
+    transition: all .5s ease-in-out;
+}
+
+.search-container input:focus {
+    outline-color: var(--theme-accent-color);
+    background-color: white;
 }
 
 .image {
@@ -153,6 +170,7 @@ body {
 
 button {
     margin-left: 1rem;
+    margin-top: 1em;
     background-color: var(--theme-accent-color);
     color: white;
     border: none;
@@ -161,6 +179,16 @@ button {
     font-size: .9rem;
     width: 6rem;
     padding: .5rem 0;
+    cursor: pointer;
+    transition: background-color .3s ease-in-out;
+}
+
+button:hover {
+    background-color: var(--theme-accent-color-light);
+}
+
+button:active {
+    scale: .9;
 }
 
 .project-buttons {
@@ -231,17 +259,14 @@ button {
 
 .project {
     position: relative;
+    border-left: 10px solid orange;
+    transition: all .5s ease-in-out
 }
 
-.project::after {
-    position: absolute;
-    content: "";
-    width: .5rem;
-    height: 100%;
-    left: 0;
-    top: 0;
-    border-radius: .5rem 0 0 .5rem;
-    background-color: orange;
+.project:hover {
+    border-left: 10px solid var(--theme-accent-color);
+    scale: 1.1;
+    z-index: 1;
 }
 
 footer {
